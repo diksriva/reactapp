@@ -25,25 +25,25 @@ function keyDown(e){
 function keyPress(e){
     if(toggle === false){
         console.log(toggle);
-    if(e.code=="KeyD"){
+    if(e.code=="KeyD" || e.code=="ArrowRight"){
          if(left<=0)
          {
              return
          }
     setLeft((left)=> left - 200);
-    } else if(e.code=="KeyA"){
+    } else if(e.code=="KeyA" || e.code=="ArrowLeft"){
         if(left>800)
         {
             return
         }
         setLeft((left)=> left + 200);
-    } else if(e.code=="KeyW"){
+    } else if(e.code=="KeyW" || e.code=="ArrowUp"){
         if(top<=0){
             return
         }
         setTop((top)=> top - 200);
 
-    } else if(e.code=="KeyS"){
+    } else if(e.code=="KeyS" || e.code=="ArrowDown"){
         if(top>400)
         {
             return
