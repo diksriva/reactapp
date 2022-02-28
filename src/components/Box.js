@@ -19,10 +19,9 @@ const [arrayBox, setArrayBox] = useState([]);
     
      function onDelete(item){
      const newArray = arrayBox.filter((element)=>{
-     return element != item;
-   
-})
-setArrayBox(newArray);
+         return element != item;
+       })
+       setArrayBox(newArray);
      }
     
     
