@@ -8,7 +8,7 @@ function handlerSelection(e){
     e.target.style.border = "2px solid blue";
 }
 var colors = ["#009933", "#006699", "#33cccc", "#99cc00", "#f60", "#000000" , "#6bf3fc" , "#d9bbe2" , "#bdcfdf" , "#5a761d" , "#088da5" , "#20b2aa"];
-var random_color = colors[Math.floor(Math.random() * colors.length)];
+//var random_color = colors[Math.floor(Math.random() * colors.length)];
 // arrayBox.style = random_color;
 const styles = {
     backgroundColor: colors[i%colors.length],
@@ -18,11 +18,11 @@ const styles = {
 
 
 function keyDown(e){
-    e.target.style.border = "2px solid black";
+    e.target.style.border = "0px";
 }
+
 function keyPress(e){
     if(toggle === false){
-        console.log(toggle);
     if(e.code=="KeyA" || e.code=="ArrowLeft"){
          if(left<=0)
          {
@@ -48,7 +48,6 @@ function keyPress(e){
         }
         setTop((top)=> top + 200);
     }else if(e.code=="Delete"){
-        console.log("Diksha");
         onDelete(item);
     }
 }
