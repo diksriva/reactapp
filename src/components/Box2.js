@@ -11,7 +11,7 @@ var colors = ["#009933", "#006699", "#33cccc", "#99cc00", "#f60", "#000000" , "#
 //var random_color = colors[Math.floor(Math.random() * colors.length)];
 // arrayBox.style = random_color;
 const styles = {
-    backgroundColor: colors[i%colors.length],
+    backgroundColor: colors[item%colors.length],
     top: top,
     left: left
 };

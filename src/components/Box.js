@@ -31,7 +31,7 @@ const [arrayBox, setArrayBox] = useState([]);
       <>
     <div className='container'>
         {arrayBox.map((item, i)=>{
-            return <Box2 key={i} item={item} onDelete={onDelete} toggle={toggle} i={i}/>;
+            return <Box2 key={item} item={item} onDelete={onDelete} toggle={toggle} i={i}/>;
         })}
    
     </div>
